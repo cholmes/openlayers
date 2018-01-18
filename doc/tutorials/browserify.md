@@ -79,9 +79,13 @@ With simple scripts you can introduce the commands `npm run build` and `npm star
   "build": "browserify -g cssify index.js | uglifyjs --compress --output bundle.js"
 }
 ```
-Now to test your application open http://localhost:8080/ in your browser. `watchify` will update `bundle.js` whenever you change something. You simply need to reload the page in your browser to see the changes.
+Then run those two commands:
+
 ```
+$ npm run build
 $ npm start
 ```
+
+Now to test your application open http://localhost:8080/ in your browser. `watchify` will update `bundle.js` whenever you change something. You simply need to reload the page in your browser to see the changes.
 
 Note that `bundle.js` will contain your application code and all dependencies used in your application. From OpenLayers, it only contains the required components.
